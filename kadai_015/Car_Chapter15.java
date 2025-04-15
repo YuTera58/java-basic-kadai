@@ -11,7 +11,7 @@ public class Car_Chapter15
 	
 	//ギアの値により速度を変える
 	public void gearChange(int afterGear)
-   {
+	{
 		System.out.println("ギア" + gear + "から" + afterGear + "に切り替えました");
 		gear = afterGear;
 		
