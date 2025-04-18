@@ -28,18 +28,15 @@ public class Dictionary_Chapter21
 		
 		for(int i = 0; i < words.length; i++)
 		{
-			if(words != null)
+			result = wordsMap.get(words[i]);
+			
+			if(result != null)
 			{
-				result = wordsMap.get(words[i]);
-				
-				if(result != null)
-				{
-					System.out.println(words[i] + "の意味は" + result);
-				}
-				else
-				{
-					System.out.println(words[i] + "は辞書に存在しません");
-				}
+				System.out.println(words[i] + "の意味は" + result);
+			}
+			else
+			{
+				System.out.println(words[i] + "は辞書に存在しません");
 			}
 		}
 	}
